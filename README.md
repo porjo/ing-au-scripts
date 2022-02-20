@@ -1,10 +1,10 @@
 Scripts for fetchng transaction listing for an ING Australia account.
 
-Requires Browserless instance for running puppeteer.
+Requires [Browserless](https://github.com/browserless/chrome) instance for running puppeteer.
 
 Usage:
 
-```
+```sh
 # Run browserless instance in 'ing' network with name 'puppeteer'
 $ docker run -d --net ing --name puppeteer docker.io/browserless/chrome
 
