@@ -1,6 +1,6 @@
 ## ING-AU-Scripts
 
-[![](https://img.shields.io/docker/automated/porjo/ing-au-scripts.svg)](https://img.shields.io/github/workflow/status/porjo/ing-au-scripts/Build%20and%20Publish)
+[![](https://img.shields.io/github/workflow/status/porjo/ing-au-scripts/Build%20and%20Publish)](https://github.com/users/porjo/packages/container/package/ing-au-scripts)
 
 
 Scripts for fetching transaction listing for an ING Australia account.
