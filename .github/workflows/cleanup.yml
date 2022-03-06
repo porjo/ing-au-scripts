@@ -1,6 +1,0 @@
-- uses: actions/delete-package-versions@v3
-  with: 
-    package-name: 'ing-au-scripts'
-    token: ${{ secrets.GHCR_PAT }}
-    min-versions-to-keep: 10
-    delete-only-pre-release-versions: "true"
