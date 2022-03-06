@@ -12,3 +12,5 @@ WORKDIR /home/node
 COPY --chown=node package.json /home/node
 RUN npm i yarn
 RUN yarn
+
+CMD ["/bin/bash", "-c", "~/node_modules/.bin/ts-node"]
