@@ -13,8 +13,12 @@ Usage:
 # Run browserless instance in 'ing' network with name 'puppeteer'
 $ docker run -d --net ing --name puppeteer docker.io/browserless/chrome
 
-# Run scripts container in 'ing' network. Volume mount current dir to 'scripts' folder. Pass script name to run as argument
-$ docker run --rm -it --net ing --name scripts -v .:/home/node/scripts:Z ghcr.io/porjo/ing-au-scripts:master scripts/test.ts
+# Run scripts container in 'ing' network.
+# Volume mount current dir to 'scripts' folder.
+# Pass script to run as argument
+$ docker run --rm -it --net ing --name scripts \
+  -v .:/home/node/scripts:Z ghcr.io/porjo/ing-au-scripts:master \
+   scripts/test.ts
 [output CSV]
 ```
 
