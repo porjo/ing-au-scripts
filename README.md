@@ -2,7 +2,6 @@
 
 [![](https://img.shields.io/github/workflow/status/porjo/ing-au-scripts/Build%20and%20Publish)](https://github.com/users/porjo/packages/container/package/ing-au-scripts)
 
-
 Scripts for fetching transaction listing for an ING Australia account.
 
 Requires [Browserless](https://github.com/browserless/chrome) instance for running puppeteer.
@@ -11,7 +10,7 @@ Usage:
 
 ```sh
 # Run browserless instance in 'ing' network with name 'puppeteer'
-$ docker run -d --net ing --name puppeteer docker.io/browserless/chrome
+$ docker run -d --net ing --name puppeteer --restart always docker.io/browserless/chrome
 
 # Run scripts container in 'ing' network.
 # Volume mount current dir to 'scripts' folder.
