@@ -9,7 +9,10 @@ Requires [Browserless](https://github.com/browserless/chrome) instance for runni
 Usage:
 
 ```sh
-# Run browserless instance in 'ing' network with name 'puppeteer'
+# Create 'ing' network
+$ docker network create ing
+
+# Run browserless instance in 'ing' network with name 'puppeteer' (test script will use this name as hostname)
 $ docker run -d --net ing --name puppeteer --restart always docker.io/browserless/chrome
 
 # Run scripts container in 'ing' network.
